@@ -1,111 +1,41 @@
-# 📊 Pesquisa de Satisfação - TudoWeb
+# 💧 Controle de Níveis de Água
 
 ## 📌 Descrição
 
-Este projeto consiste em um programa desenvolvido em Python para realizar uma pesquisa de satisfação com clientes da empresa **TudoWeb**.
+Este projeto consiste em um sistema simples de monitoramento de um reservatório de água, desenvolvido em Python e executado no terminal.
 
-O sistema coleta informações dos entrevistados e analisa o nível de satisfação com o atendimento prestado.
+O objetivo é exibir mensagens de alerta com cores diferentes, de acordo com o nível atual do reservatório, facilitando a visualização e interpretação das condições.
 
 ---
 
 ## 🎯 Objetivo
 
-Realizar uma pesquisa com clientes para identificar o grau de satisfação, classificando as respostas em:
-
-* **1 - Excelente**
-* **2 - Bom**
-* **3 - Ruim**
-
-Ao final, o sistema exibe:
-
-* Quantidade de respostas **EXCELENTE**
-* Quantidade de respostas **RUIM**
+Simular um ambiente de monitoramento, classificando o nível da água em cinco estágios e apresentando cada um deles com uma cor específica, indicando o grau de risco.
 
 ---
 
-## ⚙️ Funcionalidades
+## 🧠 Funcionalidades
 
-* Coleta de dados do usuário:
-
-  * Nome
-  * Idade
-  * Opinião sobre o atendimento
-* Utilização de estrutura de repetição `for`
-* Uso de estruturas condicionais (`if` e `elif`)
-* Contagem automática das respostas
-* Exibição de resultados ao final da pesquisa
+* Utilização de **listas** para armazenar os níveis do reservatório
+* Uso de **funções** para definir cores dinamicamente
+* Exibição de mensagens coloridas no terminal com a biblioteca **colorama**
+* Simulação dos níveis do reservatório sem necessidade de entrada do usuário
+* Reset automático do estilo do terminal após execução
 
 ---
 
-## 🧪 Testes
+## 📊 Níveis do Reservatório
 
-Para validação do sistema, foram realizados testes com **10 entrevistados**, garantindo o correto funcionamento antes da execução final com **50 entrevistados**.
-
----
-
-## 💻 Tecnologias Utilizadas
-
-* Python 3
-
----
-
-## ▶️ Como Executar o Projeto
-
-1. Clone este repositório:
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
-
-2. Acesse a pasta do projeto:
-
-```bash
-cd seu-repositorio
-```
-
-3. Execute o programa:
-
-```bash
-python pesquisa.py
-```
-
----
-
-## 📈 Exemplo de Saída
-
-```
-=== RESULTADO DA PESQUISA ===
-Quantidade de respostas EXCELENTE: 20
-Quantidade de respostas RUIM: 10
-```
-
----
-
-## 📌 Estrutura do Projeto
-
-```
-📁 projeto-pesquisa
- ├── pesquisa.py
- └── README.md
-```
-
----
-
-## 🚀 Melhorias Futuras
-
-* Validação de entrada de dados
-* Interface gráfica
-* Armazenamento dos dados em arquivo ou banco de dados
-* Exibição de porcentagens e gráficos
+| Nível | Situação              | Cor      |
+| ----- | --------------------- | -------- |
+| 1     | Muito baixo (crítico) | Vermelho |
+| 2     | Baixo                 | Amarelo  |
+| 3     | Médio                 | Verde    |
+| 4     | Alto                  | Ciano    |
+| 5     | Muito alto (alerta)   | Azul     |
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Lucas Lopez**
-
----
-
-## 📄 Licença
-
-Este projeto é apenas para fins acadêmicos.
+Projeto desenvolvido para fins educacionais no curso de Desenvolvimento de Sistemas.
